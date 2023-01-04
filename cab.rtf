@@ -1,0 +1,123 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs22\lang16393                  \fs40                \ul SOFTWARE REQUIREMENT \par
+\ulnone\b0                                   \ul\b SPECIFICATION\par
+\ulnone\b0\fs28\lang9                                                                 \fs32 FOR\fs40\par
+                       \ul\b CAB SERVICE MANAGEMENT\par
+\fs32\par
+\ulnone                                             \ul Introduction\par
+\fs40\par
+
+\pard\sa200\sl276\slmult1\qj\ulnone\b0\fs28 1.1 \ul\b Purpose of this Document\par
+\ulnone\b0\fs24 The purpose of this document is that it will provide a detailed description about the CAB MANAGEMENT SYSTEM.it will explain its purpose ,specifications,design and implementation informations\fs28 .\par
+1.2 \ul\b Acronyms and Abbrevation\par
+\ulnone\b0\fs24      db = data base\fs28\par
+1.3 \ul\b Scope\par
+\ulnone\b0\fs24 Taxi cabs play an important role in sustainable transportation.The goal of the project If we are travelling in a new place or in emergency situations,Cab services will help you to reach your destination safely and on time.Reasonable price and 24/7 service also make cab service peoples favourite.\ul\b\par
+\fs28\par
+\par
+Overview\par
+\ulnone\b0\fs24 Now a days people choose to travel via pre-booked cabs rather than catching a running taxi service.The approach in which drivers and customers are available on a single platform is  knows and cab service management system.This cab service management system  provides cab services online, and we find that booking a cab online at any time is more convenient.we can access its services through internet allows us to track our journeys or positions.\par
+The system starts with entering details of driver and the passengers have to register with by entering  full name,mail id ,phone number and password.\par
+Also the features like searching,online payment,cancellation of cab are also added.\par
+\ul\b\fs28\par
+\fs40\par
+\fs28 Actors\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\ulnone\fs24 Admin\b0  :To Manage car,booking,manage insurance,manage customer,payment,manage branches center etc.....\par
+{\pntext\f1\'B7\tab}\b User/Customer Entity \b0 : For Service Request,view invoice,make payment...\par
+{\pntext\f1\'B7\tab}\b Driver\par
+
+\pard\sa200\sl276\slmult1\qj\ul\fs28 Functionalities\ulnone\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b0\fs24 Login and signup\par
+{\pntext\f1\'B7\tab}Date Scheduling\par
+{\pntext\f1\'B7\tab}Passenger profile\par
+{\pntext\f1\'B7\tab}Cab master\par
+{\pntext\f1\'B7\tab}Cab search for nearest cab\par
+{\pntext\f1\'B7\tab}Route Tracking facility\par
+{\pntext\f1\'B7\tab}Booking Confirmation by Sms or email\par
+{\pntext\f1\'B7\tab}Payment(prepaid or postpaid)\par
+{\pntext\f1\'B7\tab}Instant E-Receipt through mobile application\par
+{\pntext\f1\'B7\tab}Cancellation\par
+{\pntext\f1\'B7\tab}Feedback\par
+
+\pard\sa200\sl276\slmult1\qj\par
+\ul\b\fs28 Requirements\par
+\ulnone\fs24         \ul User\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\ulnone User Registration \b0 : The user must be registered before booking the cab.proper validation should be provided to keep only authenticated users.All the data  supplied by the user will be stored in database and it will be used for further validation and authentication.to login user have to give user name ,mobile number and password.login  names and passwords will be stored in the database so that the user can directly login without registering again and again.\par
+
+\pard\sa200\sl276\slmult1\qj             Username: full name needed.\par
+            Password: strong password with minimum 8 charecters including          \par
+            uppercase ,lower case,numbers and special characters. \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  \b Login \b0 : In this the customer has to give out the login details which are username,password and then only he can be logged on.The user id and password given by the customer are checked from the data stored in the database.\par
+
+\pard\sa200\sl276\slmult1\qj             Usename: consist of maximum 15 letters .\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Cab Scheduling\b0 : User must also be provided a feature to schedule the journey for a later date by using a pop-up box where they can select the appropriate date and time.\par
+
+\pard\sa200\sl276\slmult1\qj             Date : Enter date in format of DD/MM/YY\par
+            Time: 24 hrs Format\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Cab Search\b0 : User can search cab for particular location.user only need to enter source,destination and the place which he want to go(search menu for pick-up and drop locations).\par
+
+\pard\sa200\sl276\slmult1\qj              Destination place: it must contain a landmark along  with pin     number.\par
+               Date : Enter date in format of DD/MM/YY\par
+\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Booking \b0 : It is a User-Friendly booking procedure with list of cabs.After validating the entered information and getting approval from the credit card authorisation.the user get a notification of successful registration.(clicking booking button)\par
+
+\pard\sa200\sl276\slmult1\qj              price details : Based on the distance travelled. \par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Route Tracking Facility : \b0 GPS detection of the current location .also it should have a map where users can view their location and their cab.\b\par
+{\pntext\f1\'B7\tab}Ride Evaluation:\b0 After completing the ride ,it allows the user with a screen showing the distance travelled and total cost.\b\par
+{\pntext\f1\'B7\tab}Cancel Ride :\b0 Which allows the user to cancel the booked ride before the driver arrives at the pick-up spot.\b\par
+{\pntext\f1\'B7\tab}\b0 Payment: with different payment methods such as credit/debit card payments and UPI payments.\b\par
+
+\pard\sa200\sl276\slmult1\qj                \b0 credit/debit card payments : Here user need to enter name and card             details.\par
+             UPI payments : Here user need to enter UPI id.\b\par
+\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Feedback : \b0 The user should prompt for the user to provide a rating for the ride experience to the driver.\b\par
+
+\pard\sa200\sl276\slmult1\qj\b0\par
+\ul\b Admin\par
+\ulnone\b0 In this process administrator will upload the availability of cab information in the database.it includes place,services,and cost of the available cab.Cab availability will be viewed by  the customer after he has logged on to the site.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Admin panel act as the Control unit of entire system.      \par
+{\pntext\f1\'B7\tab}Admin can manage both user and driver page.\par
+{\pntext\f1\'B7\tab}In home screen of admin page there is  a map displaying driver whereabouts,a graph which shows trips,farespayments,cancelled projects...\par
+{\pntext\f1\'B7\tab}Admin can manage password reset option by sending OTP to their phone.\par
+{\pntext\f1\'B7\tab}Can estimate charge for the journey according to the distance.\par
+{\pntext\f1\'B7\tab}Can display all the details related to cab.\par
+{\pntext\f1\'B7\tab}Can monitor about cab services.\par
+
+\pard\sa200\sl276\slmult1\qj          \ul\b Cab Driver\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\ulnone\b0 The driver need to register by entering details such as username,mail id,phone number and role.        \par
+
+\pard\sa200\sl276\slmult1\qj             Username: Full name needed. consist of maximum 15 ketters.\par
+            Password: Strong password with minimum 8 charecters including          \par
+            uppercase ,lower case,numbers and special characters.\par
+              Email id: Valid email id at format of @gmail.com.\par
+             Phone number: it must contain only 10 digits.it is verified by sending     \par
+              OTP.The user need to enter the correct OTP within 2    minutes ,otherwise it shows invalid OTP.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj Role: The Driver can choose driver option.The Driver option should be display more column which contain licence and vehicle number.\par
+
+\pard\sa200\sl276\slmult1\qj             Licence number:It is in format of YYYY ,4 digit year of issue followed \par
+             by 7 numbers.    \par
+            Vehicle number: It must be a 8-10 digit code.\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj  \b Login \b0 : In this the driver has to give out the login details which are username,password and then only he can be logged on.The user id and password given by the customer are checked from the data stored in the database.    \par
+
+\pard\sa200\sl276\slmult1\qj             Username: Full name needed. consist of maximum 15 ketters.\par
+            Password: Strong password with minimum 8 charecters including          \par
+            uppercase ,lower case,numbers and special characters\par
+
+\pard{\pntext\f1\'B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\qj\b Password Reset\b0 : The Password can be reset by sending an OTP to the preffered number by clicking the forget password option.          \par
+{\pntext\f1\'B7\tab} Depending on their availability,driver can set their status online or offline\par
+}
+ 
